@@ -1,0 +1,10 @@
+{
+    "name": "Fast",
+    "description": "You are faster due to your lightweightedness",
+    "type": "origins:attribute",
+    "attribute": {
+        "attribute": "minecraft:generic.movement_speed",
+        "operation": "multiply_total",
+        "value": 0.2
+    }
+}

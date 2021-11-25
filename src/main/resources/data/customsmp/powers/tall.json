@@ -1,0 +1,31 @@
+{
+    "name": "Looming Presence",
+    "description": "You have an off-putting and looming presence, as such you are 3 blocks tall.",
+    "type": "origins:action_on_callback",
+    "entity_action_chosen": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:height 1.5"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale persist set true"
+            }
+        ]
+    },
+    "entity_action_lost": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:height 1.0"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale persist set false"
+            }
+        ]
+    }
+}

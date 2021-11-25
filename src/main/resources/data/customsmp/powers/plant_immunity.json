@@ -1,0 +1,22 @@
+{
+    "name": "Scratch-proof",
+    "description": "As you are made from ashes, tiny thorns can't scratch you. Take no damage from thorns",
+    "hidden": true,
+    "type": "origins:invulnerability",
+    "damage_condition": {
+        "inverted": false,
+        "type": "origins:or",
+        "conditions": [
+            {
+                "inverted": false,
+                "type": "origins:name",
+                "name": "cactus"
+            },
+            {
+                "inverted": false,
+                "type": "origins:name",
+                "name": "sweetBerryBush"
+            }
+        ]
+    }
+}

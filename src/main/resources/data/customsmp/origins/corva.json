@@ -1,0 +1,27 @@
+{
+    "name": "Corva",
+    "description": "Corva is a scientist and librarian, previously serving the wither and the nether. It is scared of gold.",
+    "powers": [
+        "origins:launch_into_air",
+        "customsmp:tall",
+        "customsmp:long",
+        "customsmp:sunlight_blindness",
+        "origins:elytra",
+        "customsmp:aurophobia",
+        "customsmp:defense",
+        "customsmp:howl",
+        "customsmp:moonlight",
+        "origins:carnivore",
+        "origins:no_shield",
+        "customsmp:less_air",
+        "customsmp:heavy_armor"
+    ],
+    "icon": {
+        "item": "feather",
+        "amount": 1
+    },
+    "unchoosable": false,
+    "order": 0,
+    "impact": 3,
+    "loading_priority": 0
+}

@@ -1,0 +1,41 @@
+{
+    "name": "Photophobic",
+    "description": "You fear the sunlight and thus get blind in the sun, however you become more resistant as you are protecting yourself. Wear a leather cap to avoid this.",
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:exposed_to_sun"
+            },
+            {
+                "inverted": true,
+                "type": "origins:equipped_item",
+                "equipment_slot": "head",
+                "item_condition": {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "item": "minecraft:leather_helmet"
+                    }
+                }
+            }
+        ]
+    },
+    "type": "origins:stacking_status_effect",
+    "min_stacks": -2,
+    "max_stacks": 6,
+    "duration_per_stack": 5,
+    "effects": [
+        {
+            "effect": "resistance",
+            "amplifier": 1,
+            "show_particles": true,
+            "show_icon": true
+        },
+        {
+            "effect": "blindness",
+            "amplifier": 1,
+            "show_particles": true,
+            "show_icon": true
+        }
+    ]
+}

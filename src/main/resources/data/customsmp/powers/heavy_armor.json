@@ -1,0 +1,35 @@
+{
+    "name": "Feeling Bare",
+    "description": "You can not wear armor less than iron as you feel weak. You can wear a sun hat, though.",
+    "type": "origins:multiple",
+    "no_light": {
+        "type": "origins:restrict_armor",
+        "chest": {
+            "type": "origins:armor_value",
+            "comparison": "<",
+            "compare_to": 6
+        },
+        "legs": {
+            "type": "origins:armor_value",
+            "comparison": "<",
+            "compare_to": 5
+        },
+        "feet": {
+            "type": "origins:armor_value",
+            "comparison": "<",
+            "compare_to": 1
+        }
+    },
+    "sun_helmet": {
+        "type": "origins:restrict_armor",
+        "head": {
+            "type": "origins:armor_value",
+            "comparison": "<",
+            "compare_to": 2
+        },
+        "condition": {
+            "inverted": true,
+            "type": "origins:exposed_to_sun"
+        }
+    }
+}

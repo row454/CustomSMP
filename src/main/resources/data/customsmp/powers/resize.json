@@ -1,0 +1,281 @@
+{
+    "name": "Fast-Acting Yeast",
+    "description": "Due to your amazing control of yeast, you can shrink and grow at will! (Primary key grows, secondary key shrinks. Health adjusts with size, with normal size being 8 hearts.)",
+    "type": "origins:multiple",
+    "size_juice": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 6,
+        "start_value": 3,
+        "hud_render": {
+            "should_render": false
+        }
+    },
+    "start_health": {
+        "type": "origins:attribute",
+        "modifier": {
+            "name": "Max health decrease",
+            "attribute": "minecraft:generic.max_health",
+            "value": -4,
+            "operation": "addition"
+        }
+    },
+    "smallest_jump": {
+        "type": "origins:modify_jump",
+        "modifier": {
+            "operation": "multiply_total",
+            "value": -0.5
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "customsmp:resize_size_juice",
+            "compare_to": 0,
+            "comparison": "=="
+        }
+    },
+    "smaller_jump": {
+        "type": "origins:modify_jump",
+        "modifier": {
+            "operation": "multiply_total",
+            "value": -0.25
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "customsmp:resize_size_juice",
+            "compare_to": 1,
+            "comparison": "=="
+        }
+    },
+    "small_jump": {
+        "type": "origins:modify_jump",
+        "modifier": {
+            "operation": "multiply_total",
+            "value": -0.125
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "customsmp:resize_size_juice",
+            "compare_to": 2,
+            "comparison": "=="
+        }
+    },
+    "big_jump": {
+        "type": "origins:modify_jump",
+        "modifier": {
+            "operation": "multiply_total",
+            "value": 0.125
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "customsmp:resize_size_juice",
+            "compare_to": 4,
+            "comparison": "=="
+        }
+    },
+    "bigger_jump": {
+        "type": "origins:modify_jump",
+        "modifier": {
+            "operation": "multiply_total",
+            "value": 0.25
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "customsmp:resize_size_juice",
+            "compare_to": 5,
+            "comparison": "=="
+        }
+    },
+    "biggest_jump": {
+        "type": "origins:modify_jump",
+        "modifier": {
+            "operation": "multiply_total",
+            "value": 0.5
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "customsmp:resize_size_juice",
+            "compare_to": 6,
+            "comparison": "=="
+        }
+    },
+    "smallest": {
+        "type": "origins:conditioned_attribute",
+        "modifiers": [
+            {
+                "attribute": "minecraft:generic.max_health",
+                "operation": "addition",
+                "value": -12,
+                "name": "Smallest max health"
+            }
+        ],
+        "tick_rate": 20,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "customsmp:resize_size_juice",
+            "compare_to": 0,
+            "comparison": "=="
+        }
+    },
+    "smaller": {
+        "type": "origins:conditioned_attribute",
+        "modifiers": [
+            {
+                "attribute": "minecraft:generic.max_health",
+                "operation": "addition",
+                "value": -8,
+                "name": "Smaller max health"
+            }
+        ],
+        "tick_rate": 20,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "customsmp:resize_size_juice",
+            "compare_to": 1,
+            "comparison": "=="
+        }
+    },
+    "small": {
+        "type": "origins:conditioned_attribute",
+        "modifiers": [
+            {
+                "attribute": "minecraft:generic.max_health",
+                "operation": "addition",
+                "value": -4,
+                "name": "Small max health"
+            }
+        ],
+        "tick_rate": 20,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "customsmp:resize_size_juice",
+            "compare_to": 2,
+            "comparison": "=="
+        }
+    },
+    "big": {
+        "type": "origins:conditioned_attribute",
+        "modifiers": [
+            {
+                "attribute": "minecraft:generic.max_health",
+                "operation": "addition",
+                "value": 4,
+                "name": "Big max health"
+            }
+        ],
+        "tick_rate": 20,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "customsmp:resize_size_juice",
+            "compare_to": 4,
+            "comparison": "=="
+        }
+    },
+    "bigger": {
+        "type": "origins:conditioned_attribute",
+        "modifiers": [
+            {
+                "attribute": "minecraft:generic.max_health",
+                "operation": "addition",
+                "value": 8,
+                "name": "Bigger max health"
+            }
+        ],
+        "tick_rate": 20,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "customsmp:resize_size_juice",
+            "compare_to": 5,
+            "comparison": "=="
+        }
+    },
+    "biggest": {
+        "type": "origins:conditioned_attribute",
+        "modifiers": [
+            {
+                "attribute": "minecraft:generic.max_health",
+                "operation": "addition",
+                "value": 14,
+                "name": "Big max health"
+            }
+        ],
+        "tick_rate": 20,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "customsmp:resize_size_juice",
+            "compare_to": 6,
+            "comparison": "=="
+        }
+    },
+    "size_up": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale multiply 2"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale divide pehkui:motion 2"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale multiply pehkui:reach 1.5"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale divide pehkui:reach 2"
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "customsmp:resize_size_juice",
+                    "change": 1
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "customsmp:resize_size_juice",
+            "comparison": "<",
+            "compare_to": 6
+        },
+        "key": "key.origins.primary_active"
+    },
+    "size_down": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale divide 2"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale multiply pehkui:motion 2"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale divide pehkui:reach 1.5"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale multiply pehkui:reach 2"
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "customsmp:resize_size_juice",
+                    "change": -1
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "customsmp:resize_size_juice",
+            "comparison": ">",
+            "compare_to": 0
+        },
+        "key": "key.origins.secondary_active"
+    }
+}

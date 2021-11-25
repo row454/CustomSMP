@@ -1,0 +1,20 @@
+{
+    "name": "Cannibal",
+    "description": "You only eat bread.",
+    "type": "origins:prevent_item_use",
+    "item_condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "inverted": true,
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:bread"
+                }
+            },
+            {
+                "type": "origins:food"
+            }
+        ]
+    }
+}

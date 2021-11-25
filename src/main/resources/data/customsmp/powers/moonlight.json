@@ -1,0 +1,30 @@
+{
+    "name": "Moonlight",
+    "description": "The moon reminds you of the infinite expanse of space and time making him understand more about life. You get night vision and speed II at night.",
+    "type": "origins:multiple",
+    "night_vision": {
+        "condition": {
+            "inverted": true,
+            "type": "origins:daytime"
+        },
+        "type": "origins:night_vision"
+    },
+    "speed": {
+        "type": "origins:stacking_status_effect",
+        "min_stacks": 0,
+        "max_stacks": 1,
+        "duration_per_stack": 20,
+        "tick_rate": 20,
+        "effect": {
+            "effect": "minecraft:speed",
+            "is_ambient": true,
+            "amplifier": 2,
+            "show_particles": true,
+            "show_icon": true
+        },
+        "condition": {
+            "inverted": true,
+            "type": "origins:daytime"
+        }
+    }
+}

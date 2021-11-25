@@ -1,0 +1,23 @@
+{
+    "name": "Iron Stomach",
+    "description": "Rotten Flesh is surprisingly delicious.",
+    "hidden": false,
+    "condition": {
+        "inverted": false,
+        "type": "origins:constant",
+        "value": false
+    },
+    "type": "origins:modify_food",
+    "item_condition": {
+        "inverted": false,
+        "type": "origins:meat"
+    },
+    "food_modifier": {
+        "operation": "multiply_total",
+        "value": 5.5
+    },
+    "saturation_modifier": {
+        "operation": "multiply_base",
+        "value": 5.5
+    }
+}

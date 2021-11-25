@@ -1,0 +1,14 @@
+{
+    "name": "Small Lungs",
+    "description": "You have less air than the normal human. (7 bubbles)",
+    "type": "origins:action_over_time",
+    "rising_action": {
+        "type": "origins:gain_air",
+        "value": -90
+    },
+    "interval": 1,
+    "condition": {
+        "type": "origins:submerged_in",
+        "fluid": "minecraft:water"
+    }
+}

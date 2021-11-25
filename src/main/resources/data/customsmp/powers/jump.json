@@ -1,0 +1,11 @@
+{
+    "name": "Giant Wings",
+    "description": "Corva can flap his massive wings to thrust him in the right direction",
+    "type": "origins:launch",
+    "cooldown": 100,
+    "speed": 2,
+    "hud_render": {
+        "should_render": true
+    },
+    "key": "key.origins.primary_active"
+}

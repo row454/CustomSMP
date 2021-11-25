@@ -1,0 +1,11 @@
+{
+    "name": "Foolish Bravery",
+    "description": "You despise the shield and believe it to be a coward's tool, so you can't hold shields",
+    "type": "origins:prevent_item_use",
+    "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "item": "minecraft:shield"
+        }
+    }
+}

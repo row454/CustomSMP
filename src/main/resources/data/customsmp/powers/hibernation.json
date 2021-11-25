@@ -1,0 +1,58 @@
+{
+    "name": "Cryophobia",
+    "description": "When in cold biomes you struggle to fly, you gain slowness, blindness, weakness and mining fatigue.",
+    "condition": {
+        "inverted": false,
+        "type": "origins:biome",
+        "condition": {
+            "inverted": false,
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "inverted": false,
+                    "type": "origins:temperature",
+                    "comparison": "<",
+                    "compare_to": 0.15
+                }
+            ]
+        }
+    },
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 0,
+    "max_stacks": 1,
+    "duration_per_stack": 30,
+    "effects": [
+        {
+            "effect": "minecraft:weakness",
+            "duration": 100,
+            "amplifier": 0,
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": true
+        },
+        {
+            "effect": "minecraft:slowness",
+            "duration": 100,
+            "amplifier": 0,
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": true
+        },
+        {
+            "effect": "minecraft:mining_fatigue",
+            "duration": 100,
+            "amplifier": 0,
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": true
+        },
+        {
+            "effect": "minecraft:blindness",
+            "duration": 100,
+            "amplifier": 0,
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": true
+        }
+    ]
+}

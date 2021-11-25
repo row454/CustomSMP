@@ -1,0 +1,21 @@
+{
+  "name": "Crumblien",
+  "description": "The Crumblien can shrink and grow at will, however it has lower health and is weak to liquids.",
+  "powers": [
+    "customsmp:resize",
+    "origins:water_vulnerability",
+    "customsmp:soggy",
+    "origins:climbing",
+    "customsmp:fire_hurts",
+    "customsmp:speed",
+    "customsmp:grain_diet",
+    "customsmp:farmland_food",
+    "customsmp:scale_persist",
+    "origins:fall_immunity"
+  ],
+  "icon": {
+    "item": "bread",
+    "amount": 1
+  },
+  "impact": 3
+}

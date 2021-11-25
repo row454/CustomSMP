@@ -1,0 +1,64 @@
+{
+    "name": "Water Absorbent",
+    "description": "You get soggy while in water, giving you temporary slowness when you leave water.",
+    "type": "origins:multiple",
+    "wetness": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 10,
+        "hud_render": {
+            "should_render": false
+        }
+    },
+    "absorbing": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "customsmp:soggy_wetness",
+            "change": 1
+        },
+        "interval": 20,
+        "condition": {
+            "type": "origins:submerged_in",
+            "fluid": "minecraft:water"
+        }
+    },
+    "draining": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "customsmp:soggy_wetness",
+            "change": -1
+        },
+        "interval": 20,
+        "condition": {
+            "inverted": true,
+            "type": "origins:submerged_in",
+            "fluid": "minecraft:water"
+        }
+    },
+    "w_e_t": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "effect give @s minecraft:slowness 2 1"
+        },
+        "interval": 40,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "customsmp:soggy_wetness",
+                    "comparison": ">",
+                    "compare_to": 0
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:submerged_in",
+                    "fluid": "minecraft:water"
+                }
+            ]
+        }
+    }
+}

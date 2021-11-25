@@ -1,0 +1,35 @@
+{
+    "name": "Aurophobia",
+    "description": "Aurophobia is the fear of gold and you have this very intensely, thus you take more damage from golden weapons (+4 attack damage), and can not use gold.",
+    "type": "origins:multiple",
+    "damage": {
+        "type": "origins:modify_damage_taken",
+        "damage_condition": {
+            "type": "origins:attacker",
+            "entity_condition": {
+                "type": "origins:equipped_item",
+                "equipment_slot": "mainhand",
+                "item_condition": {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "tag": "customsmp:golden"
+                    }
+                }
+            }
+        },
+        "modifier": {
+            "operation": "addition",
+            "value": 2,
+            "name": "Aurophobia"
+        }
+    },
+    "nogoldfood": {
+        "type": "origins:prevent_item_use",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "tag": "customsmp:goldfood"
+            }
+        }
+    }
+}

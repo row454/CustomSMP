@@ -1,0 +1,18 @@
+{
+    "name": "Nostalgia",
+    "description": "Regain hunger when standing on farmland.",
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:feed",
+        "food": 1,
+        "saturation": 0
+    },
+    "interval": 5,
+    "condition": {
+        "type": "origins:on_block",
+        "block_condition": {
+            "type": "origins:block",
+            "block": "minecraft:farmland"
+        }
+    }
+}

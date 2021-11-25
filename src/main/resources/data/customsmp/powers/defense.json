@@ -1,0 +1,10 @@
+{
+    "name": "Tough skin",
+    "description": "You have thicker skin (+3 defence).",
+    "type": "origins:attribute",
+    "modifier": {
+        "attribute": "generic.armor",
+        "operation": "addition",
+        "value": 3
+    }
+}

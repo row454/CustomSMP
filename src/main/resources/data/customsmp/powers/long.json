@@ -1,0 +1,10 @@
+{
+    "name": "Long Arms",
+    "description": "Due to your height, you have long arms.",
+    "type": "origins:attribute",
+    "modifiers": {
+        "attribute": "reach-entity-attributes:reach",
+        "operation": "addition",
+        "value": 2.5
+    }
+}
