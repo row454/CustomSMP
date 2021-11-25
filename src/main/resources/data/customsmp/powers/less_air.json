@@ -6,6 +6,10 @@
         "type": "origins:gain_air",
         "value": -90
     },
+    "falling_action": {
+        "type": "origins:gain_air",
+        "value": 90
+    },
     "interval": 1,
     "condition": {
         "type": "origins:submerged_in",

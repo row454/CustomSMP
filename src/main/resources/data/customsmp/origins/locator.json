@@ -1,0 +1,15 @@
+{
+    "name": "Locator",
+    "description": "Google Maps",
+    "powers": [
+        "customsmp:timed_swim",
+        "customsmp:weakness_in_structures",
+        "customsmp:sturgrcgtur",
+        "customsmp:less_health"
+    ],
+    "icon": {
+        "item": "compass",
+        "amount": 1
+    },
+    "impact": 2
+}

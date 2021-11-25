@@ -1,0 +1,48 @@
+{
+    "name": "Night Swimming",
+    "description": "You can swim through the sky at night, shrouded in blackness.",
+    "type": "origins:multiple",
+    "toggle": {
+        "type": "origins:toggle",
+        "active_by_default": false,
+        "key": {
+            "key": "key.origins.primary_active"
+        }
+    },
+    "discolouration": {
+        "type": "origins:model_color",
+        "red": 0.2,
+        "green": 0.2,
+        "blue": 0.2,
+        "alpha": 0.8,
+        "condition": {
+            "inverted": true,
+            "type": "origins:daytime"
+        }
+    },
+    "ink": {
+        "type": "origins:particle",
+        "particle": "squid_ink",
+        "frequency": 30,
+        "condition": {
+            "inverted": true,
+            "type": "origins:daytime"
+        }
+    },
+    "swim": {
+        "type": "origins:swimming",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "inverted": true,
+                    "type": "origins:daytime"
+                },
+                {
+                    "type": "origins:power_active",
+                    "power": "customsmp:night_swimming_toggle"
+                }
+            ]
+        }
+    }
+}

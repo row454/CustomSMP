@@ -1,0 +1,14 @@
+{
+    "description": "You can give players blindness on hit for 5 seconds every 15 seconds.",
+    "name": "Blinding",
+    "type": "origins:target_action_on_hit",
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effect": {
+            "effect": "minecraft:blindness",
+            "amplifier": 0,
+            "duration": 100
+        }
+    },
+    "cooldown": 300
+}

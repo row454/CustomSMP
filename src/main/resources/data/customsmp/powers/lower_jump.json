@@ -1,9 +1,0 @@
-{
-    "hidden": true,
-    "type": "origins:modify_jump",
-    "modifier": {
-        "operation": "multiply_base",
-        "value": 3,
-        "name": "Bonus jump force while sprinting"
-    }
-}

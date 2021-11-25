@@ -1,0 +1,47 @@
+{
+    "name": "Sword Specialist",
+    "description": "You specialise in swords, meaning that you do more damage with them, however this has caused you to reject axes altogether",
+    "type": "origins:multiple",
+    "swords_up": {
+        "type": "origins:modify_damage_dealt",
+        "damage_condition": {
+            "type": "origins:attacker",
+            "entity_condition": {
+                "type": "origins:equipped_item",
+                "equipment_slot": "mainhand",
+                "item_condition": {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "tag": "customsmp:swords"
+                    }
+                }
+            }
+        },
+        "modifier": {
+            "name": "Swords do more damage",
+            "operation": "addition",
+            "value": 1
+        }
+    },
+    "axes_down": {
+        "type": "origins:modify_damage_dealt",
+        "damage_condition": {
+            "type": "origins:attacker",
+            "entity_condition": {
+                "type": "origins:equipped_item",
+                "equipment_slot": "mainhand",
+                "item_condition": {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "tag": "customsmp:axes"
+                    }
+                }
+            }
+        },
+        "modifier": {
+            "name": "Axes do no damage",
+            "operation": "multiply_total",
+            "value": -1
+        }
+    }
+}

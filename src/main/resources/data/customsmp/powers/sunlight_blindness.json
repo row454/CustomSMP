@@ -21,19 +21,20 @@
         ]
     },
     "type": "origins:stacking_status_effect",
-    "min_stacks": -2,
+    "min_stacks": -3,
     "max_stacks": 6,
-    "duration_per_stack": 5,
+    "duration_per_stack": 40,
+    "interval": 20,
     "effects": [
         {
             "effect": "resistance",
-            "amplifier": 1,
+            "amplifier": 0,
             "show_particles": true,
             "show_icon": true
         },
         {
             "effect": "blindness",
-            "amplifier": 1,
+            "amplifier": 0,
             "show_particles": true,
             "show_icon": true
         }

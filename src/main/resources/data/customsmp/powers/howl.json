@@ -4,7 +4,7 @@
     "type": "origins:active_self",
     "entity_action": {
         "type": "origins:execute_command",
-        "command": "effect @e[distance=..10] minecraft:glowing 15 1",
+        "command": "effect give @e[distance=..10] minecraft:glowing 15 0",
         "permission_level": 4
     },
     "cooldown": 2400,

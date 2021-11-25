@@ -1,0 +1,16 @@
+{
+    "name": "Swordmaster",
+    "description": "The Swordmaster is a well trained professional fighter.",
+    "powers": [
+        "customsmp:sword_specialist",
+        "origins:vegetarian",
+        "customsmp:adrenaline",
+        "customsmp:shieldless",
+        "customsmp:small_healthy"
+    ],
+    "icon": {
+        "item": "iron_sword",
+        "amount": 1
+    },
+    "impact": 1
+}

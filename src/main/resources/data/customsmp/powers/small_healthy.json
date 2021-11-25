@@ -1,0 +1,11 @@
+{
+    "name": "Resistant Skin",
+    "description": "Due to your experience in battle, your skin is slightly tougher. (+1 heart)",
+    "type": "origins:attribute",
+    "modifier": {
+        "attribute": "minecraft:generic.max_health",
+        "operation": "addition",
+        "value": 2
+    }
+
+}

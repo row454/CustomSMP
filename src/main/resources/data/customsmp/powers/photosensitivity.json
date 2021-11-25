@@ -1,0 +1,35 @@
+{
+    "name": "Photosensitive",
+    "description": "You get weakness and slowness when in light.",
+    "type": "origins:stacking_status_effect",
+    "min_stacks": -2,
+    "max_stacks": 5,
+    "duration_per_stack": 40,
+    "tick_rate": 20,
+    "effects": [
+        {
+            "effect": "minecraft:weakness",
+            "is_ambient": true,
+            "show_particles": true,
+            "show_icon": true
+        },
+        {
+            "effect": "minecraft:slowness",
+            "is_ambient": true,
+            "show_particles": true,
+            "show_icon": true
+        }
+    ],
+    "condition": {
+        "type": "origins:block_in_radius",
+        "block_condition": {
+            "type": "origins:light_level",
+            "comparison": ">",
+            "compare_to": 10
+        },
+        "radius": 2,
+        "shape": "cube",
+        "comparison": ">",
+        "compare_to": 0
+    }
+}

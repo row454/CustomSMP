@@ -2,6 +2,9 @@
   "replace": false,
   "origins": [
     "customsmp:corva",
-    "customsmp:crumblien"
+    "customsmp:swordmaster",
+    "customsmp:crumblien",
+    "customsmp:nue",
+    "customsmp:locator"
   ]
 }

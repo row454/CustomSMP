@@ -1,0 +1,251 @@
+{
+    "name": "Locate Structures",
+    "description": "It's in the name.",
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:choice",
+        "actions": [
+            {
+                "element": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:execute_command",
+                            "command": "setblock 0 0 0 command_block{auto:1,Command:\"locate village\"} destroy"
+                        },
+                        {
+                            "type": "origins:delay",
+                            "ticks": 1,
+                            "action": {
+                                "type": "origins:execute_command",
+                                "command": "tellraw @s {\"block\":\"0 0 0\", \"nbt\":\"LastOutput\", \"interpret\":true}"
+                            }
+                        }
+                    ]
+                },
+                "weight": 50
+            },
+            {
+                "element": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:execute_command",
+                            "command": "setblock 0 0 0 command_block{auto:1,Command:\"locate ruined_portal\"} destroy"
+                        },
+                        {
+                            "type": "origins:delay",
+                            "ticks": 1,
+                            "action": {
+                                "type": "origins:execute_command",
+                                "command": "tellraw @s {\"block\":\"0 0 0\", \"nbt\":\"LastOutput\", \"interpret\":true}"
+                            }
+                        }
+                    ]
+                },
+                "weight": 50
+            },
+            {
+                "element": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:execute_command",
+                            "command": "setblock 0 0 0 command_block{auto:1,Command:\"locate ocean_ruin\"} destroy"
+                        },
+                        {
+                            "type": "origins:delay",
+                            "ticks": 1,
+                            "action": {
+                                "type": "origins:execute_command",
+                                "command": "tellraw @s {\"block\":\"0 0 0\", \"nbt\":\"LastOutput\", \"interpret\":true}"
+                            }
+                        }
+                    ]
+                },
+                "weight": 50
+            },
+            {
+                "element": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:execute_command",
+                            "command": "setblock 0 0 0 command_block{auto:1,Command:\"locate shipwreck\"} destroy"
+                        },
+                        {
+                            "type": "origins:delay",
+                            "ticks": 1,
+                            "action": {
+                                "type": "origins:execute_command",
+                                "command": "tellraw @s {\"block\":\"0 0 0\", \"nbt\":\"LastOutput\", \"interpret\":true}"
+                            }
+                        }
+                    ]
+                },
+                "weight": 40
+            },
+            {
+                "element": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:execute_command",
+                            "command": "setblock 0 0 0 command_block{auto:1,Command:\"locate nether_fossil\"} destroy"
+                        },
+                        {
+                            "type": "origins:delay",
+                            "ticks": 1,
+                            "action": {
+                                "type": "origins:execute_command",
+                                "command": "tellraw @s {\"block\":\"0 0 0\", \"nbt\":\"LastOutput\", \"interpret\":true}"
+                            }
+                        }
+                    ]
+                },
+                "weight": 60
+            },
+            {
+                "element": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:execute_command",
+                            "command": "setblock 0 0 0 command_block{auto:1,Command:\"locate mineshaft\"} destroy"
+                        },
+                        {
+                            "type": "origins:delay",
+                            "ticks": 1,
+                            "action": {
+                                "type": "origins:execute_command",
+                                "command": "tellraw @s {\"block\":\"0 0 0\", \"nbt\":\"LastOutput\", \"interpret\":true}"
+                            }
+                        }
+                    ]
+                },
+                "weight": 35
+            },
+            {
+                "element": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:execute_command",
+                            "command": "setblock 0 0 0 command_block{auto:1,Command:\"locate desert_pyramid\"} destroy"
+                        },
+                        {
+                            "type": "origins:delay",
+                            "ticks": 1,
+                            "action": {
+                                "type": "origins:execute_command",
+                                "command": "tellraw @s {\"block\":\"0 0 0\", \"nbt\":\"LastOutput\", \"interpret\":true}"
+                            }
+                        }
+                    ]
+                },
+                "weight": 20
+            },
+            {
+                "element": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:execute_command",
+                            "command": "setblock 0 0 0 command_block{auto:1,Command:\"locate monument\"} destroy"
+                        },
+                        {
+                            "type": "origins:delay",
+                            "ticks": 1,
+                            "action": {
+                                "type": "origins:execute_command",
+                                "command": "tellraw @s {\"block\":\"0 0 0\", \"nbt\":\"LastOutput\", \"interpret\":true}"
+                            }
+                        }
+                    ]
+                },
+                "weight": 5
+            },
+            {
+                "element": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:execute_command",
+                            "command": "setblock 0 0 0 command_block{auto:1,Command:\"locate igloo\"} destroy"
+                        },
+                        {
+                            "type": "origins:delay",
+                            "ticks": 1,
+                            "action": {
+                                "type": "origins:execute_command",
+                                "command": "tellraw @s {\"block\":\"0 0 0\", \"nbt\":\"LastOutput\", \"interpret\":true}"
+                            }
+                        }
+                    ]
+                },
+                "weight": 20
+            },
+            {
+                "element": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:execute_command",
+                            "command": "setblock 0 0 0 command_block{auto:1,Command:\"locate bastion_remnant\"} destroy"
+                        },
+                        {
+                            "type": "origins:delay",
+                            "ticks": 1,
+                            "action": {
+                                "type": "origins:execute_command",
+                                "command": "tellraw @s {\"block\":\"0 0 0\", \"nbt\":\"LastOutput\", \"interpret\":true}"
+                            }
+                        }
+                    ]
+                },
+                "weight": 25
+            },
+            {
+                "element": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:execute_command",
+                            "command": "setblock 0 0 0 command_block{auto:1,Command:\"locate endcity\"} destroy"
+                        },
+                        {
+                            "type": "origins:delay",
+                            "ticks": 1,
+                            "action": {
+                                "type": "origins:execute_command",
+                                "command": "tellraw @s {\"block\":\"0 0 0\", \"nbt\":\"LastOutput\", \"interpret\":true}"
+                            }
+                        }
+                    ]
+                },
+                "weight": 55
+            },
+            {
+                "element": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:execute_command",
+                            "command": "setblock 0 0 0 command_block{auto:1,Command:\"locate pillager_outpost\"} destroy"
+                        },
+                        {
+                            "type": "origins:delay",
+                            "ticks": 1,
+                            "action": {
+                                "type": "origins:execute_command",
+                                "command": "tellraw @s {\"block\":\"0 0 0\", \"nbt\":\"LastOutput\", \"interpret\":true}"
+                            }
+                        }
+                    ]
+                },
+                "weight": 40
+            }
+        ]
+    },
+    "interval": 150
+}

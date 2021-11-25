@@ -1,0 +1,16 @@
+{
+    "name": "Nue",
+    "description": "The Nue is a yokai made of various animals that has super-natural powers",
+    "powers": [
+        "customsmp:arrows_hurt",
+        "customsmp:blinding",
+        "customsmp:night_swimming",
+        "customsmp:photosensitivity",
+        "customsmp:shieldless"
+    ],
+    "icon": {
+        "item": "ink_sac",
+        "amount": 1
+    },
+    "impact": 2
+}

@@ -1,0 +1,28 @@
+{
+    "name": "Adrenaline",
+    "description": "Sacrifice 4 hearts to get an adrenaline boost! (Strength I for 10s)",
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "effect give @s minecraft:strength 10 0",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:damage",
+                "amount": 8,
+                "source": {
+                    "name": "player"
+                }
+            }
+        ]
+    },
+    "cooldown": 200,
+    "hud_render": {
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+        "bar_index": 1
+    },
+    "key": "key.origins.primary_active"
+}

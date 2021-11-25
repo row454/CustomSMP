@@ -1,0 +1,13 @@
+{
+    "name": "Arrows Hurts!",
+    "description": "Arrows do more damage to you. (x4 damage)",
+    "type": "origins:modify_damage_taken",
+    "damage_condition": {
+        "type": "origins:projectile",
+        "projectile": "minecraft:arrow"
+    },
+    "modifier": {
+        "operation": "multiply_base",
+        "value": 4
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "name": "Weakness in Structures",
+    "description": "You get weakness when in a structure.",
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "execute as @s if predicate customsmp:in_structure run effect give @s minecraft:weakness 6 0"
+    },
+    "interval": 100
+}

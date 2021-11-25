@@ -1,0 +1,81 @@
+{
+    "type": "origins:multiple",
+    "name": "Timed Swim",
+    "description": "Swim through the air, for a moment.",
+    "counter": {
+        "hud_render": {
+            "should_render": false
+        },
+        "type": "origins:resource",
+        "min": 0,
+        "max": 10,
+        "max_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:toggle",
+                    "power": "customsmp:timed_swim_flight_toggle"
+                },
+                {
+                    "type": "origins:toggle",
+                    "power": "customsmp:timed_swim_timer_toggle"
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "customsmp:timed_swim_counter",
+                    "operation": "set",
+                    "change": 0
+                }
+            ]
+        }
+    },
+    "active": {
+        "type": "origins:active_self",
+        "key": "key.origins.primary_active",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:toggle",
+                    "power": "customsmp:timed_swim_timer_toggle"
+                },
+                {
+                    "type": "origins:toggle",
+                    "power": "customsmp:timed_swim_flight_toggle"
+                }
+            ]
+        },
+        "cooldown": 3600
+    },
+    "timer_toggle": {
+        "type": "origins:toggle",
+        "active_by_default": false,
+        "key": "key.no"
+    },
+    "timer": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "customsmp:timed_swim_counter",
+            "operation": "add",
+            "change": 1
+        },
+        "interval": 20,
+        "condition": {
+            "type": "origins:power_active",
+            "power": "customsmp:timed_swim_timer_toggle"
+        }
+    },
+    "flight_toggle": {
+        "type": "origins:toggle",
+        "active_by_default": false,
+        "key": "key.no"
+    },
+    "flight": {
+        "type": "origins:swimming",
+        "condition": {
+            "type": "origins:power_active",
+            "power": "customsmp:timed_swim_flight_toggle"
+        }
+    }
+}
