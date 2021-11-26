@@ -213,19 +213,19 @@
             "actions": [
                 {
                     "type": "origins:execute_command",
-                    "command": "scale multiply 2"
+                    "command": "scale multiply pehkui:height 2"
                 },
                 {
                     "type": "origins:execute_command",
-                    "command": "scale divide pehkui:motion 2"
+                    "command": "scale multiply pehkui:width 2"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale multiply pehkui:projectiles 1.5"
                 },
                 {
                     "type": "origins:execute_command",
                     "command": "scale multiply pehkui:reach 1.5"
-                },
-                {
-                    "type": "origins:execute_command",
-                    "command": "scale divide pehkui:reach 2"
                 },
                 {
                     "type": "origins:change_resource",
@@ -249,11 +249,11 @@
             "actions": [
                 {
                     "type": "origins:execute_command",
-                    "command": "scale divide 2"
+                    "command": "scale divide pehkui:height 2"
                 },
                 {
                     "type": "origins:execute_command",
-                    "command": "scale multiply pehkui:motion 2"
+                    "command": "scale divide pehkui:width 2"
                 },
                 {
                     "type": "origins:execute_command",
@@ -261,7 +261,7 @@
                 },
                 {
                     "type": "origins:execute_command",
-                    "command": "scale multiply pehkui:reach 2"
+                    "command": "scale divide pehkui:projectiles 1.5"
                 },
                 {
                     "type": "origins:change_resource",

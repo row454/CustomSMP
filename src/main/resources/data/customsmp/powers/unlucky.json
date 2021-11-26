@@ -5,7 +5,7 @@
     "interval": 40,
     "entity_action": {
         "type": "origins:execute_command",
-        "command": "effect give @e[distance=..10] minecraft:unluck 3 0",
+        "command": "effect give @e[distance=..15] minecraft:unluck 3 0",
         "permission_level": 4
     }
 }

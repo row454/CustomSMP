@@ -1,0 +1,20 @@
+{
+    "powers": [
+        "customsmp:moth_wings",
+        "customsmp:frail_body",
+        "customsmp:flutter",
+        "customsmp:plant_immune",
+        "origins:fall_immunity",
+        "customsmp:short",
+        "customsmp:reach",
+        "origins:vegetarian",
+        "customsmp:shit"
+    ],
+    "icon": {
+        "item": "lantern",
+        "amount": 1
+    },
+    "impact": 3,
+    "name": "Moth",
+    "description": "A small fluttery insect that makes long journeys in the search for light."
+}

@@ -1,6 +1,6 @@
 {
     "name": "Sword Specialist",
-    "description": "You specialise in swords, meaning that you do more damage with them, however this has caused you to reject axes altogether",
+    "description": "You specialise in swords, meaning that you do more damage with them, however this has caused you to reject offensive axes altogether.",
     "type": "origins:multiple",
     "swords_up": {
         "type": "origins:modify_damage_dealt",

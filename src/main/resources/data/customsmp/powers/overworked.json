@@ -1,0 +1,10 @@
+{
+  "type": "origins:modify_exhaustion",
+  "name": "Overworked",
+  "description": "Extra exhaustion from being overworked.",
+  "modifier": {
+    "name": "Extra exhaustion from being overworked",
+    "value": 0.6,
+    "operation": "multiply_base"
+  }
+}

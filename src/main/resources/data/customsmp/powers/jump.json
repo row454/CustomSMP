@@ -1,11 +1,16 @@
 {
     "name": "Giant Wings",
-    "description": "Corva can flap his massive wings to thrust him in the right direction",
+    "description": "You can flap your massive wings to thrust yourself in the right direction.",
     "type": "origins:launch",
-    "cooldown": 100,
-    "speed": 2,
+    "cooldown": 400,
     "hud_render": {
-        "should_render": true
+        "sprite_location": "origins:textures/gui/resource_bar.png",
+        "bar_index": 4
     },
-    "key": "key.origins.primary_active"
+    "sound": "minecraft:entity.parrot.fly",
+    "speed": 2,
+    "key": {
+        "key": "key.origins.secondary_active",
+        "continuous": true
+    }
 }

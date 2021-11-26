@@ -1,0 +1,16 @@
+{
+    "name": "Sneeze",
+    "description": "Fire off a sneeze that ",
+    "type": "origins:fire_projectile",
+    "entity_type": "minecraft:arrow",
+    "cooldown": 100,
+    "hud_render": {
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+        "bar_index": 21
+    },
+    "tag": "{pickup:0b,damage:1.0d}",
+    "key": {
+        "key": "key.origins.primary_active",
+        "continuous": false
+    }
+}

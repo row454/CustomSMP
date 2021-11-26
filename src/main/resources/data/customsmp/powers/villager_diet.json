@@ -1,0 +1,27 @@
+{
+  "type": "origins:prevent_item_use",
+  "name": "Villager Diet",
+  "description": "This origin can only eat bread, carrots, potatoes, and apples. (and upgrades!)",
+  "item_condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "tag": "customsmp:villager_food"
+        },
+        "inverted": true
+      },
+      {
+        "type": "origins:food"
+      },
+      {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "tag": "origins:ignore_diet"
+        },
+        "inverted": true
+      }
+    ]
+  }
+}

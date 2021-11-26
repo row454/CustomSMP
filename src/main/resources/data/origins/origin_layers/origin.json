@@ -1,10 +1,15 @@
 {
-  "replace": false,
+  "replace": true,
   "origins": [
     "customsmp:corva",
     "customsmp:swordmaster",
     "customsmp:crumblien",
     "customsmp:nue",
-    "customsmp:locator"
+    "customsmp:locator",
+    "customsmp:panda",
+    "customsmp:winged_cat",
+    "customsmp:seagull",
+    "customsmp:village_overseer",
+    "origins:phantom"
   ]
 }

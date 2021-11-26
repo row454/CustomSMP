@@ -1,0 +1,14 @@
+{
+	"powers": [
+		"customsmp:thick_skin",
+		"customsmp:remove_restock",
+		"customsmp:overworked",
+		"customsmp:villager_diet",
+		"customsmp:only_heavy_armor"
+	],
+	"icon": "minecraft:emerald",
+    "order": 5,
+    "impact": 2,
+	"name": "Village Overseer",
+	"description": "You are the Overseer of villages. You protect the villages from raiders, and ensure trade goes smoothly."
+}

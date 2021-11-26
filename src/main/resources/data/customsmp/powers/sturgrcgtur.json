@@ -20,6 +20,14 @@
                                 "type": "origins:execute_command",
                                 "command": "tellraw @s {\"block\":\"0 0 0\", \"nbt\":\"LastOutput\", \"interpret\":true}"
                             }
+                        },
+                        {
+                            "type": "origins:delay",
+                            "ticks": 2,
+                            "action": {
+                                "type": "origins:execute_command",
+                                "command": "setblock 0 0 0 bedrock destroy"
+                            }
                         }
                     ]
                 },
@@ -39,6 +47,14 @@
                             "action": {
                                 "type": "origins:execute_command",
                                 "command": "tellraw @s {\"block\":\"0 0 0\", \"nbt\":\"LastOutput\", \"interpret\":true}"
+                            }
+                        },
+                        {
+                            "type": "origins:delay",
+                            "ticks": 2,
+                            "action": {
+                                "type": "origins:execute_command",
+                                "command": "setblock 0 0 0 bedrock destroy"
                             }
                         }
                     ]
@@ -60,6 +76,14 @@
                                 "type": "origins:execute_command",
                                 "command": "tellraw @s {\"block\":\"0 0 0\", \"nbt\":\"LastOutput\", \"interpret\":true}"
                             }
+                        },
+                        {
+                            "type": "origins:delay",
+                            "ticks": 2,
+                            "action": {
+                                "type": "origins:execute_command",
+                                "command": "setblock 0 0 0 bedrock destroy"
+                            }
                         }
                     ]
                 },
@@ -79,6 +103,14 @@
                             "action": {
                                 "type": "origins:execute_command",
                                 "command": "tellraw @s {\"block\":\"0 0 0\", \"nbt\":\"LastOutput\", \"interpret\":true}"
+                            }
+                        },
+                        {
+                            "type": "origins:delay",
+                            "ticks": 2,
+                            "action": {
+                                "type": "origins:execute_command",
+                                "command": "setblock 0 0 0 bedrock destroy"
                             }
                         }
                     ]
@@ -100,6 +132,14 @@
                                 "type": "origins:execute_command",
                                 "command": "tellraw @s {\"block\":\"0 0 0\", \"nbt\":\"LastOutput\", \"interpret\":true}"
                             }
+                        },
+                        {
+                            "type": "origins:delay",
+                            "ticks": 2,
+                            "action": {
+                                "type": "origins:execute_command",
+                                "command": "setblock 0 0 0 bedrock destroy"
+                            }
                         }
                     ]
                 },
@@ -119,6 +159,14 @@
                             "action": {
                                 "type": "origins:execute_command",
                                 "command": "tellraw @s {\"block\":\"0 0 0\", \"nbt\":\"LastOutput\", \"interpret\":true}"
+                            }
+                        },
+                        {
+                            "type": "origins:delay",
+                            "ticks": 2,
+                            "action": {
+                                "type": "origins:execute_command",
+                                "command": "setblock 0 0 0 bedrock destroy"
                             }
                         }
                     ]
@@ -140,6 +188,14 @@
                                 "type": "origins:execute_command",
                                 "command": "tellraw @s {\"block\":\"0 0 0\", \"nbt\":\"LastOutput\", \"interpret\":true}"
                             }
+                        },
+                        {
+                            "type": "origins:delay",
+                            "ticks": 2,
+                            "action": {
+                                "type": "origins:execute_command",
+                                "command": "setblock 0 0 0 bedrock destroy"
+                            }
                         }
                     ]
                 },
@@ -159,6 +215,14 @@
                             "action": {
                                 "type": "origins:execute_command",
                                 "command": "tellraw @s {\"block\":\"0 0 0\", \"nbt\":\"LastOutput\", \"interpret\":true}"
+                            }
+                        },
+                        {
+                            "type": "origins:delay",
+                            "ticks": 2,
+                            "action": {
+                                "type": "origins:execute_command",
+                                "command": "setblock 0 0 0 bedrock destroy"
                             }
                         }
                     ]
@@ -180,6 +244,14 @@
                                 "type": "origins:execute_command",
                                 "command": "tellraw @s {\"block\":\"0 0 0\", \"nbt\":\"LastOutput\", \"interpret\":true}"
                             }
+                        },
+                        {
+                            "type": "origins:delay",
+                            "ticks": 2,
+                            "action": {
+                                "type": "origins:execute_command",
+                                "command": "setblock 0 0 0 bedrock destroy"
+                            }
                         }
                     ]
                 },
@@ -199,6 +271,14 @@
                             "action": {
                                 "type": "origins:execute_command",
                                 "command": "tellraw @s {\"block\":\"0 0 0\", \"nbt\":\"LastOutput\", \"interpret\":true}"
+                            }
+                        },
+                        {
+                            "type": "origins:delay",
+                            "ticks": 2,
+                            "action": {
+                                "type": "origins:execute_command",
+                                "command": "setblock 0 0 0 bedrock destroy"
                             }
                         }
                     ]
@@ -220,6 +300,14 @@
                                 "type": "origins:execute_command",
                                 "command": "tellraw @s {\"block\":\"0 0 0\", \"nbt\":\"LastOutput\", \"interpret\":true}"
                             }
+                        },
+                        {
+                            "type": "origins:delay",
+                            "ticks": 2,
+                            "action": {
+                                "type": "origins:execute_command",
+                                "command": "setblock 0 0 0 bedrock destroy"
+                            }
                         }
                     ]
                 },
@@ -240,6 +328,14 @@
                                 "type": "origins:execute_command",
                                 "command": "tellraw @s {\"block\":\"0 0 0\", \"nbt\":\"LastOutput\", \"interpret\":true}"
                             }
+                        },
+                        {
+                            "type": "origins:delay",
+                            "ticks": 2,
+                            "action": {
+                                "type": "origins:execute_command",
+                                "command": "setblock 0 0 0 bedrock destroy"
+                            }
                         }
                     ]
                 },
@@ -247,5 +343,5 @@
             }
         ]
     },
-    "interval": 150
+    "interval": 15000
 }

@@ -1,0 +1,25 @@
+{
+    "name": "Winged Cat",
+    "description": "The Winged Cat has great mobility. It also does other stuff ig.",
+    "powers": [
+        "customsmp:fire_hurts",
+        "origins:nine_lives",
+        "origins:water_vulnerability",
+        "customsmp:speed",
+        "origins:fall_immunity",
+        "origins:scare_creepers",
+        "origins:carnivore",
+        "origins:velvet_paws",
+        "origins:cat_vision",
+        "customsmp:short",
+        "customsmp:jump_boost",
+        "customsmp:bite",
+        "origins:elytra",
+        "customsmp:jump"
+    ],
+    "icon": {
+        "item": "tropical_fish",
+        "amount": 1
+    },
+    "impact": 2
+}

@@ -1,0 +1,19 @@
+{
+    "name": "Panda",
+    "description": "The Panda is a large animal that eats bamboo",
+    "powers": [
+        "customsmp:fire_hurts",
+        "customsmp:big_healthy",
+        "customsmp:sneeze",
+        "customsmp:unspeed",
+        "customsmp:shieldless",
+        "customsmp:hibernate",
+        "customsmp:tall",
+        "customsmp:jungle_spawn"
+    ],
+    "icon": {
+        "item": "slime_ball",
+        "amount": 1
+    },
+    "impact": 2
+}

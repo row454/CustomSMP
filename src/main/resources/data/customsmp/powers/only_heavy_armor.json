@@ -1,0 +1,45 @@
+{
+    "type": "origins:restrict_armor",
+    "hidden": false,
+    "name": "Fear of Weakness",
+    "description": "You can only wear diamond and better armor, other armors make you feel like you will fail the village.",
+    "head": {
+        "type": "origins:armor_value",
+        "inverted": false,
+        "comparison": "<=",
+        "compare_to": 2
+    },
+    "chest": {
+		"type": "origins:or",
+		"conditions": [
+			{
+				"type": "origins:armor_value",
+				"inverted": false,
+				"comparison": "<=",
+				"compare_to": 7
+			},
+			{
+				"type": "origins:ingredient",
+				"inverted": "true",
+				"ingredient": {
+						"item": "minecraft:elytra"
+				}
+
+			}
+		]
+		
+    },
+    "legs": {
+        "type": "origins:armor_value",
+        "inverted": false,
+        "comparison": "<=",
+        "compare_to": 5
+    },
+    "feet": {
+        "type": "origins:armor_value",
+        "inverted": false,
+        "comparison": "<=",
+        "compare_to": 2
+    }
+	
+}

@@ -6,7 +6,8 @@
         "customsmp:blinding",
         "customsmp:night_swimming",
         "customsmp:photosensitivity",
-        "customsmp:shieldless"
+        "customsmp:shieldless",
+        "customsmp:unlucky"
     ],
     "icon": {
         "item": "ink_sac",

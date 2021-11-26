@@ -1,0 +1,11 @@
+{
+	"type": "origins:elytra_flight",
+	"render_elytra": true,
+
+	"condition": {
+		"type": "origins:in_rain",
+		"inverted": true
+	},
+  "name": "Wet Wings",
+  "description": "Water drenches your wings making you unable to fly."
+}
