@@ -23,17 +23,29 @@
   "sun_helmet": {
     "type": "origins:restrict_armor",
     "head": {
-      "type": "origins:or",
+      "type": "origins:and",
       "conditions": [
         {
-          "type": "origins:armor_value",
-          "comparison": "<",
-          "compare_to": 2
+          "type": "origins:or",
+          "conditions": [
+            {
+              "type": "origins:armor_value",
+              "comparison": "<",
+              "compare_to": 2
+            },
+            {
+              "type": "origins:ingredient",
+              "ingredient": {
+                "item": "minecraft:golden_helmet"
+              }
+            }
+          ]
         },
         {
+          "inverted": true,
           "type": "origins:ingredient",
           "ingredient": {
-            "item": "minecraft:golden_helmet"
+            "item": "minecraft:leather_helmet"
           }
         }
       ]

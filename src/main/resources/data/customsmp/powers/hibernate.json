@@ -1,4 +1,6 @@
 {
+    "name": "Hibernate",
+    "description": "Get slowness 5 for 20 seconds, but get regeneration 2 for 10 seconds.",
     "type": "origins:active_self",
     "cooldown": 3600,
     "entity_action": {

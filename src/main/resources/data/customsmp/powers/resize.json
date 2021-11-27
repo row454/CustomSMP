@@ -221,10 +221,6 @@
                 },
                 {
                     "type": "origins:execute_command",
-                    "command": "scale multiply pehkui:projectiles 1.5"
-                },
-                {
-                    "type": "origins:execute_command",
                     "command": "scale multiply pehkui:reach 1.5"
                 },
                 {
@@ -258,10 +254,6 @@
                 {
                     "type": "origins:execute_command",
                     "command": "scale divide pehkui:reach 1.5"
-                },
-                {
-                    "type": "origins:execute_command",
-                    "command": "scale divide pehkui:projectiles 1.5"
                 },
                 {
                     "type": "origins:change_resource",
