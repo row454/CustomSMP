@@ -6,21 +6,21 @@
     "head": {
         "type": "origins:armor_value",
         "inverted": false,
-        "comparison": "<=",
-        "compare_to": 2
+        "comparison": "<",
+        "compare_to": 3
     },
     "chest": {
 		"type": "origins:or",
+        "inverted": true,
 		"conditions": [
 			{
 				"type": "origins:armor_value",
 				"inverted": false,
-				"comparison": "<=",
-				"compare_to": 7
+				"comparison": ">=",
+				"compare_to": 8
 			},
 			{
 				"type": "origins:ingredient",
-				"inverted": "true",
 				"ingredient": {
 						"item": "minecraft:elytra"
 				}
@@ -32,14 +32,14 @@
     "legs": {
         "type": "origins:armor_value",
         "inverted": false,
-        "comparison": "<=",
-        "compare_to": 5
+        "comparison": "<",
+        "compare_to": 6
     },
     "feet": {
         "type": "origins:armor_value",
         "inverted": false,
-        "comparison": "<=",
-        "compare_to": 2
+        "comparison": "<",
+        "compare_to": 3
     }
 	
 }

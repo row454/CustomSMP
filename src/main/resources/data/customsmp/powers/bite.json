@@ -33,12 +33,8 @@
         "cooldown": 1,
         "type": "origins:self_action_on_hit",
         "entity_action": {
-            "type": "origins:delay",
-            "tick": 1,
-            "action": {
-                "type": "origins:toggle",
-                "power": "customsmp:bite_toggle"
-            }
+            "type": "origins:toggle",
+            "power": "customsmp:bite_toggle"
         },
         "condition": {
             "type": "origins:and",

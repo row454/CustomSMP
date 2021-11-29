@@ -1,4 +1,6 @@
 {
+  "name": "Climbing",
+  "description": "You can climb thing with your little arms!",
   "type": "origins:climbing",
   "hold_condition": {
     "type": "origins:or",

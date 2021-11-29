@@ -1,6 +1,6 @@
 {
     "name": "Moonlight",
-    "description": "The moon reminds you of the infinite expanse of space and time making him understand more about life. You get night vision and speed II at night.",
+    "description": "You get night vision and speed II at night.",
     "type": "origins:multiple",
     "night_vision": {
         "condition": {

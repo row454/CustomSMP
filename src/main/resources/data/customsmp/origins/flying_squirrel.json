@@ -1,0 +1,24 @@
+{
+    "name": "Flying Squirrel",
+    "description": "The Flying Squirrel has great mobility. It also does other stuff ig.",
+    "powers": [
+        "origins:more_exhaustion",
+        "customsmp:climbing",
+        "customsmp:speed",
+        "origins:elytra",
+        "origins:fall_immunity",
+        "origins:vegetarian",
+        "origins:velvet_paws",
+        "customsmp:very_small",
+        "customsmp:jump",
+        "origins:cat_vision",
+        "customsmp:sunlight",
+        "customsmp:jump_boost",
+        "customsmp:frail_body"
+    ],
+    "icon": {
+        "item": "oak_sapling",
+        "amount": 1
+    },
+    "impact": 2
+}

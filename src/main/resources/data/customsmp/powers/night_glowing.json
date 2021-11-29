@@ -1,0 +1,18 @@
+{
+    "name": "Glows at night",
+    "description": "I think you know what this does",
+    "type": "origins:action_over_time",
+    "condition": {
+        "inverted": true,
+        "type": "origins:daytime"
+    },
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effect": {
+            "effect": "minecraft:glowing",
+            "amplifier": 0,
+            "duration": 100
+        }
+    },
+    "interval": 80
+}
